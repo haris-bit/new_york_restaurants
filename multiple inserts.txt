@@ -1,0 +1,33 @@
+SELECT name,
+  CASE 
+    WHEN review > 4.5 THEN 'Extraordinary'
+    WHEN review > 4 THEN 'Excellent'
+    WHEN review > 3 THEN 'Good'
+    WHEN review > 2 THEN 'Fair'
+    ELSE 'Poor'
+  END AS 'Review'
+FROM nomnom;
+
+
+INSERT INTO celebs (id, name, age)
+ VALUES (1, "Justin Bieber", 22);
+
+ INSERT INTO celebs (id, name, age)
+ VALUES (2, "Beyonce Knowles", 33);
+
+ INSERT INTO celebs (id, name, age)
+ VALUES (3, "Jeremy Lin", 26);
+
+ INSERT INTO celebs (id, name, age)
+ VALUES (4, "Taylor Swift", 26);
+
+
+ OR 
+
+
+INSERT INTO celebs (id, name, age)
+VALUES 
+(1, "Justin Bieber", 22),
+(2, "Beyonce Knowles", 33),
+(3, "Jeremy Lin", 26),
+(4, "Taylor Swift", 26)
